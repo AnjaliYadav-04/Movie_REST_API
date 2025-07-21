@@ -53,7 +53,7 @@ Movie_REST_API/
 - pip install django djangorestframework
 - Or use requirements.txt if available:
 - pip install -r requirements.txt
-- 
+
 ### 4. Run migrations
 - python manage.py migrate
 
@@ -63,7 +63,8 @@ Movie_REST_API/
 ---
 
 ## 🚀 API Endpoints
-**Endpoint	Description**
+**Endpoint	Description**: 
+
 /movies/	All movies
 /action/	Action movies
 /comedy/	Comedy movies
@@ -78,6 +79,23 @@ Movie_REST_API/
 - from django.conf.urls.static import static
 - urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
   
+---
+
+## ✅ requirements.txt
+**Here's a minimal requirements.txt file based on a Django REST API project:**
+- Django>=4.2
+- djangorestframework>=3.14
+- Pillow>=9.0.0  # For image upload support
+  
+**You can create this file by running:**
+- pip freeze > requirements.txt
+
+---
+
+## 🖼️ Image URL Example:
+**When you upload a movie with an image, it will be served like:**
+- http://127.0.0.1:8000/media/Images/movie_image.jpg
+
 ---
 
 ## 🧑‍💻 Author
